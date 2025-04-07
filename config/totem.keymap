@@ -14,7 +14,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define Base        0
-#define Nav         1
+#define Num         1
 #define Sym         2
 #define Fun         3
 #define Game        4
@@ -48,10 +48,8 @@
             quick-tap-ms = <125>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
-        };
+        };                            
     };
-
-    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -59,20 +57,94 @@
         Base {
             display-name = "Base";
             bindings = <
-              &kp Q       &kp W       &kp E          &kp R         &kp T        &kp Y    &kp U        &kp I        &kp O       &kp P
-              &hm LGUI A  &hm LALT S  &hm LCTRL D    &hm LSHIFT F  &kp G        &kp H    &hm RSHFT J  &hm RCTRL K  &hm RALT L  &hm RGUI SEMICOLON
-&lt 3 ESCAPE  &kp Z       &kp X       &kp C          &kp V         &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp SLASH           &kp APOSTROPHE
-                                      &mt LCTRL DEL  &lt 1 TAB     &kp SPACE    &kp RET  &lt 2 BSPC   &kp MINUS
+              &mo 1 Q
+              &mo 2 W
+              &mo 3 E          
+              &mo 4 R         
+              &mo 5 T        
+              &kp Y    
+              &kp U        
+              &kp I        
+              &kp O       
+              &kp P
+
+              &mo 6 A       
+              &mo 7 S       
+              &mo 8 D          
+              &mo 9 F  
+              &kp G        
+              &kp H    
+              &kp J  
+              &kp K  
+              &kp L  
+              &kp SEMICOLON
+
+              &trans  
+              &hm LSHIFT Z  
+              &hm LCTRL X   
+              &hm LGUI C       
+              &hm LALT V         
+              &kp B        
+              &kp N    
+              &hm RALT M        
+              &hm RGUI COMMA    
+              &hm RCTRL DOT     
+              &hm RSHIFT SLASH           
+              &trans
+
+              &kp ESC  
+              &kp TAB     
+              &kp SPACE    
+              &kp RET  
+              &kp BSPC   
+              &kp DEL
             >;
         };
 
-        Nav {
-            display-name = "Nav";
+        Num {
+            display-name = "Num";
             bindings = <
-              &kp TILDE       &trans     &kp UP_ARROW  &trans     &kp LBRC    &kp RBRC  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-              &kp LEFT_SHIFT  &kp LEFT   &kp DOWN      &kp RIGHT  &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&kp LEFT_ALT  &kp LEFT_WIN    &kp MINUS  &trans        &kp PLUS   &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp PLUS
-                                         &trans        &trans     &trans      &trans    &trans        &kp DOT
+              &kp AT       
+              &kp AT     
+              &kp AT  
+              &kp AT     
+              &kp AT    
+              &kp SLASH
+              &kp NUMBER_8  
+              &kp NUMBER_9  
+              &kp ASTERISK
+
+              &kp AT  
+              &kp AT   
+              &kp AT      
+              &kp AT  
+              &kp AT    
+              &kp MINUS  
+              &kp NUMBER_4  
+              &kp NUMBER_5  
+              &kp NUMBER_6  
+              &kp PLUS
+              
+              &trans 
+              &kp AT    
+              &kp AT  
+              &kp AT        
+              &kp AT   
+              &kp AT    
+              &kp NUMBER_0  
+              &kp NUMBER_1  
+              &kp NUMBER_2  
+              &kp NUMBER_3  
+              &kp DOT  
+              &trans
+              
+              &trans        
+              &trans     
+              &trans      
+              &trans    
+              &trans        
+              &trans
+
             >;
         };
 
