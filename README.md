@@ -1,13 +1,13 @@
 # Config for Totem with Dongle Display
 
 Notes:
-&kp = key press
-&trans = transparent
-&lt = layer toggle
-&mt = modifier toggle
-&bootloader = bootloader
-&to = to layer
-&studio_unlock = studio unlock
+- &kp = key press
+- &trans = transparent
+- &lt = layer toggle
+- &mt = modifier toggle
+- &bootloader = bootloader
+- &to = to layer
+- &studio_unlock = studio unlock
 
 Thumb clusters will be fixed to 
 |ESC|TAB|SPC| |RET|BSP|DEL|
